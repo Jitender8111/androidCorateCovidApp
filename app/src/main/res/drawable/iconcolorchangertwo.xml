@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:drawable="@drawable/ic_virus_ac_unit_24"
+        android:duration="500"></item>
+    <item android:drawable="@drawable/ic_virustwo_ac_unit_24"
+        android:duration="500"></item>
+    <item android:drawable="@drawable/ic_virusthree_ac_unit_24"
+        android:duration="500"></item>
+
+
+
+</animation-list>

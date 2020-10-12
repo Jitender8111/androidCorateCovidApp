@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsOFCountryCovid">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:textStyle="bold"
+                android:text="Details of Covid-19  "
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textAllCaps="true"
+                ></TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/dark_brown"
+                ></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+
+                    android:textStyle="bold"
+                    android:text="Country"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:id="@+id/tvDetailsCountry"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@color/dark_red"
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_brown"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                ></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+
+                    android:textStyle="bold"
+                    android:text="Total Cases"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:id="@+id/tvDetailsTotalCases"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textColor="@color/dark_red"
+                    android:gravity="center"
+
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_brown"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                ></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+
+                    android:textStyle="bold"
+                    android:text="Recovered"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:id="@+id/tvDetailsRecovered"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@color/dark_red"
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_brown"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                ></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+
+                    android:textStyle="bold"
+                    android:text="Deaths"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:id="@+id/tvDetailsDeaths"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@color/dark_red"
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_brown"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                ></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+
+                    android:textStyle="bold"
+                    android:text="Active"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:id="@+id/tvDetailsActive"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@color/dark_red"
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_brown"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                ></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+
+                    android:textStyle="bold"
+                    android:text="Today Deaths"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:id="@+id/tvDetailsTodayDeaths"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@color/dark_red"
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_brown"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                ></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+
+                    android:textStyle="bold"
+                    android:text="Critical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:id="@+id/tvDetailsCritical"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@color/dark_red"
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_brown"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                ></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+
+                    android:textStyle="bold"
+                    android:text="Today Cases"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="18dp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:id="@+id/tvDetailsTodayCases"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@color/dark_red"
+                    android:textSize="15dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

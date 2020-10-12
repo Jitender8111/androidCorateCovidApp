@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CORATE</string>
+
+    <string name="btnStateWise">State Information</string>
+    <string name="btnGlobalinfo">Global Information</string>
+    <string name="btnquestionAnswer">User Panel</string>
+</resources>

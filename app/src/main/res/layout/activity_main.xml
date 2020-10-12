@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linearlayoutbackground"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".MainActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></View>
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      app:cardCornerRadius="20dp"
+      android:id="@+id/cardviewforimagesplash"
+
+      app:cardBackgroundColor="@color/pureWhite"
+      android:layout_margin="20dp"
+      >
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+          android:layout_margin="30dp"
+          android:id="@+id/imageviewforsplash"
+          android:background="@drawable/covidninteen"
+          ></ImageView>
+  </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/tvtrackersplash"
+        android:text="CREATED BY JMIETI(INDIA)"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+
+        ></TextView>
+
+
+</LinearLayout>

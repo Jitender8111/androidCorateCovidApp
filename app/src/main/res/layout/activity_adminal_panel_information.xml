@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminalPanelInformation">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10.7"
+            android:id="@+id/LinearLayoutAllVisible"
+            android:visibility="gone"
+            android:padding="5dp"
+            >
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="0.7"
+              android:text="Plz Give the Correct Answer Of those Question"
+              android:textAllCaps="true"
+              android:textStyle="bold"
+              android:gravity="center"
+              ></TextView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                >
+                <LinearLayout
+
+                    android:layout_width = "match_parent"
+                    android:background="@drawable/linearlayoutbackground"
+                    android:id = "@+id/parent"
+                    android:layout_weight="1"
+
+                    android:layout_height = "match_parent">
+                    <TextView
+                        android:id = "@+id/text"
+                        android:textSize = "15dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                       android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Hello Guys "
+
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                         />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:id="@+id/linearlayouthiddenforbutton1"
+                android:layoutDirection="rtl"
+               android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2"
+                >
+
+                <Button
+                    android:id = "@+id/animate"
+                    android:text = "Yes"
+                    android:layout_width = "0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_height = "match_parent" />
+
+                <Button
+                    android:id = "@+id/animateTwo"
+                    android:text = "No"
+                    android:layout_width = "0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_height = "match_parent" />
+            </LinearLayout>
+
+           <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+               android:id="@+id/CardViewTwo"
+               android:visibility="gone"
+                >
+                <LinearLayout
+
+                    android:layout_width = "match_parent"
+                    android:background="@drawable/linearlayoutbackground"
+                    android:id = "@+id/parentTwo"
+                    android:layout_weight="1"
+
+                    android:layout_height = "match_parent">
+                    <TextView
+                        android:id = "@+id/textTwo"
+                        android:textSize = "15dp"
+                        android:textStyle="bold"
+
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Hello Guys "
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                         />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:id="@+id/linearlayouthiddenforbutton2"
+                android:layoutDirection="rtl"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:visibility="gone"
+                >
+
+                <Button
+                    android:id = "@+id/animateTwoYes"
+                    android:text = "Yes"
+                    android:layout_width = "0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_height = "match_parent" />
+
+                <Button
+                    android:id = "@+id/animateTwoNo"
+                    android:text = "No"
+                    android:layout_width = "0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_height = "match_parent" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/CardViewThree"
+                android:visibility="gone"
+                >
+                <LinearLayout
+
+                    android:layout_width = "match_parent"
+                    android:background="@drawable/linearlayoutbackground"
+                    android:id = "@+id/parentThree"
+                    android:layout_weight="1"
+
+                    android:layout_height = "match_parent">
+                    <TextView
+                        android:id = "@+id/textThree"
+                        android:textSize = "15dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Hello Guys "
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:id="@+id/linearlayouthiddenforbutton3"
+                android:layoutDirection="rtl"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:visibility="gone"
+                >
+
+                <Button
+                    android:id = "@+id/animateThreeYes"
+                    android:text = "Yes"
+                    android:layout_width = "0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_height = "match_parent" />
+
+                <Button
+                    android:id = "@+id/animateThreeNo"
+                    android:text = "No"
+                    android:layout_width = "0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_height = "match_parent" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/CardViewFour"
+                android:visibility="gone"
+                >
+                <LinearLayout
+
+                    android:layout_width = "match_parent"
+                    android:background="@drawable/linearlayoutbackground"
+                    android:id = "@+id/parentFour"
+                    android:layout_weight="1"
+
+                    android:layout_height = "match_parent">
+                    <TextView
+                        android:id = "@+id/textFour"
+                        android:textSize = "15dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:id="@+id/linearlayouthiddenforbutton4"
+                android:layoutDirection="rtl"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:visibility="gone"
+                >
+
+                <Button
+                    android:id = "@+id/animateFourYes"
+                    android:text = "Yes"
+                    android:layout_width = "0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_height = "match_parent" />
+
+                <Button
+                    android:id = "@+id/animateFourNo"
+                    android:text = "No"
+                    android:layout_width = "0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_height = "match_parent" />
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/CardViewFive"
+                android:visibility="gone"
+                >
+                <LinearLayout
+
+                    android:layout_width = "match_parent"
+                    android:background="@drawable/linearlayoutbackground"
+                    android:id = "@+id/parentFive"
+                    android:layout_weight="1"
+
+                    android:layout_height = "match_parent">
+                    <TextView
+                        android:id = "@+id/textFive"
+                        android:textSize = "15dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "match_parent"
+                         />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:id="@+id/linearlayouthiddenforbutton5"
+                android:layoutDirection="rtl"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:visibility="gone"
+                >
+
+                <Button
+                    android:id = "@+id/animateFiveYes"
+                    android:text = "Yes"
+                    android:layout_width = "0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_height = "match_parent" />
+
+                <Button
+                    android:id = "@+id/animateFiveNo"
+                    android:text = "No"
+                    android:layout_width = "0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/buttonbackground"
+                    android:layout_height = "match_parent" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutToHideArcLoader"
+            android:weightSum="5"
+            android:visibility="gone"
+
+
+            >
+            <org.eazegraph.lib.charts.PieChart
+
+                android:id="@+id/piechart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:padding="8dp"
+                android:layout_margin="20dp"
+
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:text="Risk"
+                android:id="@+id/textViewRisk"
+                android:textAllCaps="true"
+                android:textColor="@color/cardview_dark_background"
+                android:gravity="center_horizontal"
+                android:textSize="30dp"
+                android:layout_margin="10dp"
+                ></TextView>
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

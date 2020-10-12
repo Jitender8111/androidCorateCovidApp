@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:drawable="@drawable/ic_recovered_favorite_24"
+        android:duration="400"></item>
+    <item android:drawable="@drawable/ic_heartgreen_favorite_24"
+        android:duration="400"></item>
+    <item android:drawable="@drawable/ic_heartredtwo_favorite_24"
+        android:duration="400"></item>
+
+
+
+</animation-list>

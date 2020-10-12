@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:drawable="@drawable/ic_patient_walk_24"
+        android:duration="500"></item>
+    <item android:drawable="@drawable/ic_activetwo_directions_run_24"
+        android:duration="500"></item>
+    <item android:drawable="@drawable/ic_activethree_seat_recline_extra_24"
+        android:duration="500"></item>
+
+
+
+</animation-list>

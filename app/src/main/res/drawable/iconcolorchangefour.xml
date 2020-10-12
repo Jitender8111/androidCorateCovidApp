@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:drawable="@drawable/ic_death_hotel_24"
+        android:duration="500"></item>
+    <item android:drawable="@drawable/ic_deaths_seat_flat_angled_24"
+        android:duration="500"></item>
+    <item android:drawable="@drawable/ic_deathtwo_airline_seat_flat_24"
+        android:duration="500"></item>
+
+
+
+</animation-list>

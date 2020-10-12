@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linearlayoutbackground"
+
+    tools:context=".IndiaCovidTracking">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5.5"
+        android:visibility="gone"
+        android:id="@+id/lnforvisible"
+        >
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="0.5"
+          app:cardCornerRadius="10dp"
+
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="5dp"
+          android:elevation="10dp"
+          >
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="2"
+              android:orientation="vertical"
+              >
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1.3"
+                  android:text="INDIA COVID-19 STATUS"
+                  android:gravity="center"
+                  android:textSize="20dp"
+                  android:textStyle="bold"
+                  ></TextView>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="0.7"
+                  android:text="Update In Every 10 minutes "
+                  android:textAllCaps="true"
+                  android:gravity="center"
+                  android:textStyle="bold"
+                  ></TextView>
+          </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1.3"
+                android:weightSum="2"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="3"
+                        android:padding="20dp"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.8"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/imageViewTotalCases"
+
+                            ></ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:text="Total Cases"
+                            android:id="@+id/tvTotalCaseOfIndia"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+
+                            ></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:text="0"
+                            android:textColor="@color/dark_red"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:id="@+id/tvTotalCasesInNumber"
+                            ></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="10dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="3"
+                        android:padding="20dp"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.8"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/imageViewActive"
+
+                            ></ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:text="Active"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+
+                            ></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:text="0"
+                            android:textColor="@color/dark_red"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:id="@+id/tvActiveCasesInNumber"
+
+                            ></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1.3"
+                android:weightSum="2"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="10dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="3"
+                        android:padding="20dp"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.8"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/imageViewRecovered"
+
+                            ></ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:text="Recovered"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+
+                            ></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:text="0"
+                            android:textColor="@color/dark_red"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:id="@+id/tvRecoveredInNumber"
+                            ></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="10dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="3"
+                        android:padding="20dp"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.8"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/imageViewDeath"
+
+                            ></ImageView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:text="Deaths"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+
+                            ></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                            android:text="0"
+                            android:textColor="@color/dark_red"
+                            android:gravity="center"
+                            android:textSize="15dp"
+                            android:id="@+id/tvDeatInNumber"
+                            ></TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="2.3"
+                android:weightSum="3"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="10dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="3"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:background="@color/cardview_shadow_end_color"
+                        >
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:text="@string/btnStateWise"
+                            android:id="@+id/imgBtnstatewiseInfo"
+                            android:background="@drawable/buttonbackground"
+                            android:textStyle="bold"
+                            android:textSize="17dp"
+                            ></Button>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/btnGlobalinfo"
+                            android:id="@+id/imgbtnglobalInfo"
+                            android:layout_margin="10dp"
+                            android:textStyle="bold"
+                            android:textSize="17dp"
+                            android:background="@drawable/buttonbackground"
+                            ></Button>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:textStyle="bold"
+                            android:text="@string/btnquestionAnswer"
+                            android:id="@+id/imgbtnQuestionAnswer"
+                            android:textSize="17dp"
+                            android:background="@drawable/buttonbackground"
+                            ></Button>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relVisibility"
+
+        >
+        <com.leo.simplearcloader.SimpleArcLoader
+            android:visibility="visible"
+            android:id="@+id/loader"
+            android:layout_centerInParent="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:arc_style="simple_arc"
+            android:layout_gravity="center_horizontal"
+
+            ></com.leo.simplearcloader.SimpleArcLoader>
+    </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
